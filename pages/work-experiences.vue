@@ -17,19 +17,21 @@
             </button>
           </div>
 
-          <div v-for="work in workFilter" :key="work.id"
-            class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-orange-500 relative before:bg-orange-500 before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
-            <h4 class="leading-[28px] text-lg text-orange-500 font-semibold mb-2">{{ work.office }}</h4>
-            <p class="italic leading-[28px]">
-            <div v-html="work.desc"></div>
-            </p>
+          <TransitionGroup name="fade" tag="div">
+            <div v-for="work in workFilter" :key="work.id"
+              class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-orange-500 relative before:bg-orange-500 before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
+              <h4 class="leading-[28px] text-lg text-orange-500 font-semibold mb-2">{{ work.office }}</h4>
+              <p class="italic leading-[28px]">
+              <div v-html="work.desc"></div>
+              </p>
 
-            <ul class="pl-5 mt-4 list-disc">
-              <li class="pb-3.5" v-for="item in work.list" :key="item.id">
-                <div v-html="item.text"></div>
-              </li>
-            </ul>
-          </div>
+              <ul class="pl-5 mt-4 list-disc">
+                <li class="pb-3.5" v-for="item in work.list" :key="item.id">
+                  <div v-html="item.text"></div>
+                </li>
+              </ul>
+            </div>
+          </TransitionGroup>
 
         </div>
       </div>

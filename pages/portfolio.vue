@@ -18,7 +18,7 @@
           </button>
         </div>
 
-        <TransitionGroup name="portfolio" tag="div" mode="out-in">
+        <TransitionGroup name="fade" tag="div">
           <template v-for="(portfolio, portIdx) in portfolioFilter" :key="portfolio.id">
             <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4">{{ portfolio.title }}</h3>
 
@@ -185,25 +185,3 @@ const onHide = () => {
   visibleRef.value = false
 }
 </script>
-
-<style>
-.portfolio-enter-active {
-  transition: all 0.8s ease;
-}
-
-.portfolio-enter-from {
-  opacity: 0;
-}
-
-.portfolio-enter-to {
-  opacity: 1;
-}
-
-.portfolio-leave-from {
-  opacity: 1;
-}
-
-.portfolio-leave-to {
-  opacity: 0;
-}
-</style>

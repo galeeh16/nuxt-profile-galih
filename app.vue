@@ -20,4 +20,28 @@
   transform: translate(-50px, 0);
   filter: blur(10px);
 }
+
+.slide-left-leave-active {
+  position: absolute;
+}
+
+.fade-enter-active {
+  transition: all 0.8s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
