@@ -9,7 +9,19 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: 'Galih Anggoro Jati'
+      title: 'Galih Anggoro Jati',
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: '/profile-img.webp'
+        },
+        {
+          rel: 'preload',
+          as: 'image',
+          href: '/hero-bg.webp'
+        }
+      ]
     },
     pageTransition: {
       name: 'slide-left',

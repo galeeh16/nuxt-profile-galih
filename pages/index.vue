@@ -25,7 +25,7 @@ setLocale('en')
 
 <style scoped>
 .hero {
-  background-image: url('~/assets/images/hero-bg.webp');
+  background-image: url('/hero-bg.webp');
   background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;

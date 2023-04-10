@@ -4,8 +4,7 @@
       class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-[#040b14] duration-300 ease-in-out text-white p-4 lg:p-6 z-[5]"
       v-show="isShowingSidebar">
       <div class="flex justify-center mt-4 lg:mt-6">
-        <img src="@/assets/images/profile-img.webp"
-          class="w-[120px] h-[120px] rounded-full border-[7px] border-gray-700" />
+        <img src="/profile-img.webp" class="w-[120px] h-[120px] rounded-full border-[7px] border-gray-700" />
       </div>
 
       <div class="mt-4">
