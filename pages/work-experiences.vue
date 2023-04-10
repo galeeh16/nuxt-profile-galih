@@ -4,34 +4,36 @@
 
     <div class="mt-10"></div>
 
-    <div class="grid">
-      <div class="mb-4">
-        <h3 class="text-[26px] font-semibold mt-4">Professional Experiences</h3>
+    <ClientOnly>
+      <div class="w-full">
+        <div class="mb-4">
+          <h3 class="text-[26px] font-semibold mt-4">Professional Experiences</h3>
 
-        <div class="flex gap-4 items-center mt-6 mb-4 overflow-x-auto pb-3">
-          <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
-            class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
-            :class="search === filter.id ? 'text-orange-500 border-orange-500' : 'border-gray-300'">
-            {{ filter.title }}
-          </button>
+          <div class="flex gap-4 items-center mt-6 mb-4 overflow-x-auto pb-3">
+            <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
+              class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
+              :class="search === filter.id ? 'text-orange-500 border-orange-500' : 'border-gray-300'">
+              {{ filter.title }}
+            </button>
+          </div>
+
+          <div v-for="work in workFilter" :key="work.id"
+            class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-orange-500 relative before:bg-orange-500 before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
+            <h4 class="leading-[28px] text-lg text-orange-500 font-semibold mb-2">{{ work.office }}</h4>
+            <p class="italic leading-[28px]">
+            <div v-html="work.desc"></div>
+            </p>
+
+            <ul class="pl-5 mt-4 list-disc">
+              <li class="pb-3.5" v-for="item in work.list" :key="item.id">
+                <div v-html="item.text"></div>
+              </li>
+            </ul>
+          </div>
+
         </div>
-
-        <div v-for="work in workFilter" :key="work.id"
-          class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-orange-500 relative before:bg-orange-500 before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
-          <h4 class="leading-[28px] text-lg text-orange-500 font-semibold mb-2">{{ work.office }}</h4>
-          <p class="italic leading-[28px]">
-          <div v-html="work.desc"></div>
-          </p>
-
-          <ul class="pl-5 mt-4 list-disc">
-            <li class="pb-3.5" v-for="item in work.list" :key="item.id">
-              <div v-html="item.text"></div>
-            </li>
-          </ul>
-        </div>
-
       </div>
-    </div>
+    </ClientOnly>
   </div>
 </template>
 

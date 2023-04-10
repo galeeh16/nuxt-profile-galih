@@ -41,11 +41,12 @@
         <vue-easy-lightbox :visible="visibleRef" :imgs="imgsRef" :index="indexRef" @hide="onHide"></vue-easy-lightbox>
 
       </div>
+
+      <div class="flex justify-start lg:justify-end mb-5 mt-3">
+        <ButtonNext to="/work-experiences" name="next" />
+      </div>
     </ClientOnly>
 
-    <div class="flex justify-start lg:justify-end mb-5 mt-3">
-      <ButtonNext to="/work-experiences" name="next" />
-    </div>
   </div>
 </template>
 
