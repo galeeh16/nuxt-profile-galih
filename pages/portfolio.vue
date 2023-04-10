@@ -18,28 +18,29 @@
           </button>
         </div>
 
-        <template v-for="(portfolio, portIdx) in portfolioFilter" :key="portfolio.id">
-          <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4">{{ portfolio.title }}</h3>
+        <TransitionGroup name="portfolio" tag="div" mode="out-in">
+          <template v-for="(portfolio, portIdx) in portfolioFilter" :key="portfolio.id">
+            <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4">{{ portfolio.title }}</h3>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-            <div v-for="(img, indexImg) in portfolio.imgs" :key="img.id" class="cursor-pointer shadow-lg"
-              title="Show image">
-              <template v-if="portIdx <= 1">
-                <img :src="img.src" class="object-cover w-full h-[253px] rounded-sm"
-                  @click="showGroupImage(portfolio.imgs, indexImg)" />
-              </template>
-              <template v-else>
-                <img v-lazy="img.src" class="object-cover w-full h-[253px]"
-                  @click="showGroupImage(portfolio.imgs, indexImg)" />
-              </template>
+            <div class="port-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 relative">
+              <div v-for="(img, indexImg) in portfolio.imgs" :key="img.id" class="cursor-pointer shadow-lg"
+                title="Show image">
+                <template v-if="portIdx <= 1">
+                  <img :src="img.src" class="object-cover w-full h-[253px] rounded-sm"
+                    @click="showGroupImage(portfolio.imgs, indexImg)" />
+                </template>
+                <template v-else>
+                  <img v-lazy="img.src" class="object-cover w-full h-[253px]"
+                    @click="showGroupImage(portfolio.imgs, indexImg)" />
+                </template>
+              </div>
             </div>
-          </div>
 
-          <div class="mb-14"></div>
-        </template>
+            <div class="mb-14"></div>
+          </template>
+        </TransitionGroup>
 
         <vue-easy-lightbox :visible="visibleRef" :imgs="imgsRef" :index="indexRef" @hide="onHide"></vue-easy-lightbox>
-
       </div>
 
       <div class="flex justify-start lg:justify-end mb-10 mt-3">
@@ -184,3 +185,25 @@ const onHide = () => {
   visibleRef.value = false
 }
 </script>
+
+<style>
+.portfolio-enter-active {
+  transition: all 0.8s ease;
+}
+
+.portfolio-enter-from {
+  opacity: 0;
+}
+
+.portfolio-enter-to {
+  opacity: 1;
+}
+
+.portfolio-leave-from {
+  opacity: 1;
+}
+
+.portfolio-leave-to {
+  opacity: 0;
+}
+</style>
