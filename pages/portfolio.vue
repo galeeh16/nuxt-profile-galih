@@ -75,6 +75,10 @@ import CBSMon1 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring1.we
 import CBSMon2 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring2.webp'
 import CBSMon3 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring3.webp'
 
+useHead({
+  title: 'Portfolio - Galih Anggoro Jati'
+})
+
 const portfolios = ref([
   {
     id: 1,

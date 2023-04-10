@@ -38,6 +38,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'Work Experiences - Galih Anggoro Jati'
+})
+
 const workExperiences = ref([
   {
     id: 1,

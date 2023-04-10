@@ -87,14 +87,14 @@
           <PHP />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PHP</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PHP</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <Laravel />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Laravel
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Laravel
             Framework</span>
         </div>
 
@@ -102,7 +102,7 @@
           <Lumen />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Lumen
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Lumen
             Framework</span>
         </div>
 
@@ -110,42 +110,42 @@
           <JS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">JavaScript</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">JavaScript</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <Vue />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">VueJS</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">VueJS</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <NuxtJS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">NuxtJS</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">NuxtJS</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <HTML />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">HTML</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">HTML</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <CSS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">CSS</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">CSS</span>
         </div>
 
         <div class="group flex relative cursor-pointer">
           <PostgreSQL />
           <span
             class="group-hover:opacity-100  hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-                                                                                                                                                                                                                                                  -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PostgreSQL</span>
+                                                                                                                                                                                                                                                      -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PostgreSQL</span>
         </div>
       </div>
     </div>
@@ -159,6 +159,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'About - Galih Anggoro Jati'
+})
+
 function getAge(dateString) {
   var today = new Date();
   var birthDate = new Date(dateString);
