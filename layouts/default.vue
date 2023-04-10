@@ -14,9 +14,11 @@
       <div class="mt-14">
         <ul>
           <li class="mb-8 font-normal" v-for="link in links" :key="link.id">
-            <nuxt-link :to="link.to" class="inline-flex items-center gap-2 text-gray-400 ">
-              <span :style="link.to == route.path ? linkOverrideStyle : linkBaseStyle" v-html="link.svg"></span>
-              <span :class="link.to == route.path ? 'text-orange-500' : 'text-gray-400'">{{ $t(link.name) }}</span>
+            <nuxt-link :to="link.to" class="inline-flex items-center gap-2 text-gray-400 group">
+              <span class="group-hover:fill-orange-500" :style="link.to == route.path ? linkOverrideStyle : linkBaseStyle"
+                v-html="link.svg"></span>
+              <span class="group-hover:text-orange-500"
+                :class="link.to == route.path ? 'text-orange-500' : 'text-gray-400'">{{ $t(link.name) }}</span>
             </nuxt-link>
           </li>
         </ul>

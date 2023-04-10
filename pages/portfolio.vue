@@ -42,7 +42,7 @@
 
       </div>
 
-      <div class="flex justify-start lg:justify-end mb-5 mt-3">
+      <div class="flex justify-start lg:justify-end mb-10 mt-3">
         <ButtonNext to="/work-experiences" name="next" />
       </div>
     </ClientOnly>
