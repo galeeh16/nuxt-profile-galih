@@ -163,6 +163,6 @@ const linkOverrideStyle = ref({
 
 .bg-gradient {
   background-image: linear-gradient(45deg, #82fdff, #fb78ff);
-  filter: blur(140px);
+  filter: blur(160px);
 }
 </style>
