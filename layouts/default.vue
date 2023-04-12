@@ -1,10 +1,14 @@
 <template>
   <Transition name="sidebar">
     <header id="header"
-      class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-[#040b14] duration-300 ease-in-out text-white p-4 lg:p-6 z-[5]"
+      class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-[#040b14] duration-300 ease-in-out text-white p-4 lg:p-6 z-[5] overflow-hidden"
       v-show="isShowingSidebar">
-      <div class="flex justify-center mt-4 lg:mt-6">
-        <img src="/profile-img.webp" class="w-[120px] h-[120px] rounded-full border-[7px] border-gray-700" />
+      <div class="flex justify-center mt-4 lg:mt-6 relative">
+        <img src="/profile-img.webp" class="w-[120px] h-[120px] rounded-full" />
+
+        <div class="bg-gradient w-44 h-52 absolute z-[-1] top-0 left-0 inset-0">
+
+        </div>
       </div>
 
       <div class="mt-4 text-center">
@@ -155,5 +159,10 @@ const linkOverrideStyle = ref({
 
 .sidebar-leave-to {
   transform: translateX(-300px);
+}
+
+.bg-gradient {
+  background-image: linear-gradient(45deg, #82fdff, #fb78ff);
+  filter: blur(140px);
 }
 </style>
