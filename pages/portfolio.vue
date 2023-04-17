@@ -46,6 +46,8 @@
       <div class="flex justify-start lg:justify-end mb-10 mt-3">
         <ButtonNext to="/work-experiences" name="next" />
       </div>
+
+      <div class="mb-4" />
     </ClientOnly>
 
   </div>

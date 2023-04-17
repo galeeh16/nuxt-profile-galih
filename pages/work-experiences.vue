@@ -7,7 +7,7 @@
     <ClientOnly>
       <div class="w-full">
         <div class="mb-4">
-          <h3 class="text-[26px] font-semibold mt-4">Professional Experiences</h3>
+          <h3 class="text-[26px] font-semibold mt-4 lg:mt-12">Professional Experiences</h3>
 
           <div class="flex gap-4 items-center mt-6 mb-4 overflow-x-auto pb-3">
             <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
