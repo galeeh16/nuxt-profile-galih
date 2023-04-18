@@ -6,10 +6,21 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
+    'nuxt-simple-sitemap',
   ],
   app: {
     head: {
       title: 'Galih Anggoro Jati',
+      meta: [
+        {
+          name: 'description',
+          content: 'Profile Galih Anggoro Jati'
+        },
+        {
+          name: 'keywords',
+          content: 'Profile, Galih, Anggoro, Nuxt JS, JavaScript, Vue'
+        }
+      ],
       link: [
         {
           rel: 'preload',
@@ -40,4 +51,11 @@ export default defineNuxtConfig({
       }
     }
   },
+  // Recommended 
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://galih-anggoro-jati.vercel.app',
+    }
+  },
+
 })
