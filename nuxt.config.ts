@@ -11,8 +11,16 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+      charset: 'utf-8',
       title: 'Galih Anggoro Jati',
       meta: [
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+        },
         {
           name: 'description',
           content: 'Profile Galih Anggoro Jati'
