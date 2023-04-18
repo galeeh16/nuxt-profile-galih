@@ -4,7 +4,7 @@
       class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-[#040b14] duration-300 ease-in-out text-white p-4 lg:p-6 z-[5] overflow-hidden"
       v-show="isShowingSidebar">
       <div class="flex justify-center mt-4 lg:mt-6 relative">
-        <img src="/profile-img.webp" class="w-[120px] h-[120px] rounded-full" />
+        <img src="/profile-galih.webp" class="w-[120px] h-[120px] rounded-full" />
 
         <div class="bg-gradient w-44 h-52 absolute z-[-1] top-0 left-0 inset-0">
 
