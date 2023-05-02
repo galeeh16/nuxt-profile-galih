@@ -15,7 +15,7 @@
         <img src="/profile-galih.webp" class="max-w-[300px] max-h-[300px] rounded-lg w-full" />
       </div>
       <div class="self-baseline">
-        <table>
+        <table class="">
           <tbody>
             <tr>
               <td class="align-top pb-7 text-left font-semibold">
@@ -161,7 +161,6 @@
 </template>
 
 <script setup>
-import ImageGalih from '~/assets/images/profile-galih.webp'
 
 useHead({
   title: 'About - Galih Anggoro Jati'
