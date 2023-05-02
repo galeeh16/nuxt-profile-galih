@@ -15,7 +15,7 @@
         <img src="/profile-galih.webp" class="max-w-[300px] max-h-[300px] rounded-lg w-full" />
       </div>
       <div class="self-baseline">
-        <table class="">
+        <table>
           <tbody>
             <tr>
               <td class="align-top pb-7 text-left font-semibold">
