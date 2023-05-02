@@ -12,7 +12,7 @@
 
     <div class="mt-10 flex flex-wrap gap-10 lg:gap-16">
       <div>
-        <img src="/profile-galih.webp" class="max-w-[300px] max-h-[300px] rounded-lg" width="100%" height="100%" />
+        <img src="/profile-galih.webp" class="max-w-[300px] max-h-[300px] rounded-lg w-full" />
       </div>
       <div class="self-baseline">
         <table class="">
@@ -161,6 +161,8 @@
 </template>
 
 <script setup>
+import ImageGalih from '~/assets/images/profile-galih.webp'
+
 useHead({
   title: 'About - Galih Anggoro Jati'
 })

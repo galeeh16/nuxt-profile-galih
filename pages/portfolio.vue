@@ -23,10 +23,10 @@
             <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4">{{ portfolio.title }}</h3>
 
             <div class="port-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 relative">
-              <div v-for="(img, indexImg) in portfolio.imgs" :key="img.id" class="cursor-pointer shadow-lg"
-                title="Show image">
+              <div v-for="(img, indexImg) in portfolio.imgs" :key="img.id"
+                class="cursor-pointer shadow-lg rounded-xl overflow-hidden" title="Show image">
                 <template v-if="portIdx <= 1">
-                  <img :src="img.src" class="object-cover w-full h-[253px] rounded-sm"
+                  <img :src="img.src" class="object-cover w-full h-[253px]"
                     @click="showGroupImage(portfolio.imgs, indexImg)" />
                 </template>
                 <template v-else>

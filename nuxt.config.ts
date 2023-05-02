@@ -3,6 +3,7 @@ import id from './locales/id.json'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // ssr: false,
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
@@ -31,11 +32,6 @@ export default defineNuxtConfig({
         }
       ],
       link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: '/profile-img.webp'
-        },
         {
           rel: 'preload',
           as: 'image',
