@@ -101,6 +101,7 @@ const workExperiences = ref([
       { id: '3-2', text: 'Creating Dextop Dashboard (Backoffice for Telkom DEX Team) with Laravel.' },
       { id: '3-3', text: 'Creating KPU Web Dashboard Cianjur with Laravel.' },
       { id: '3-4', text: 'Creating <a target="_blank" href="https://disnakertrans.cianjurkab.go.id/skm/" class="text-orange-500 font-semibold hover:underline">SKM</a> (Survey App for Disnakertrans) Cianjur.' },
+      { id: '3-5', text: 'Creating <a target="_blank" href="https://bisnisdidubai.com" class="text-orange-500 font-semibold hover:underline">BisnisDiDubai</a> with NuxtJS.' },
     ]
   },
   {
