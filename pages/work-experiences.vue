@@ -11,8 +11,8 @@
 
           <div class="flex gap-4 items-center mt-6 mb-4 overflow-x-auto pb-3">
             <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
-              class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
-              :class="search === filter.id ? 'text-orange-500 border-orange-500' : 'border-gray-300'">
+              class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 bg-white text-[14px] hover:text-orange-500 hover:border-orange-500 hover:bg-orange-50/40 ease-in-out transition duration-100 whitespace-nowrap"
+              :class="search === filter.id ? 'text-orange-500 border-orange-500 ' : 'border-gray-300'">
               {{ filter.title }}
             </button>
           </div>

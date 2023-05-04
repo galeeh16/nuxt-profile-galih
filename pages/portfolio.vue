@@ -12,8 +12,8 @@
         <div class="flex gap-4 items-center mt-8 overflow-x-auto pb-3">
 
           <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
-            class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
-            :class="search === filter.id ? 'text-orange-500 border-orange-500' : 'border-gray-300'">
+            class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border bg-white border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
+            :class="search === filter.id ? 'text-orange-500 border-orange-500 ' : 'border-gray-300'">
             {{ filter.title }}
           </button>
         </div>
@@ -78,6 +78,18 @@ import CBSMon1 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring1.we
 import CBSMon2 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring2.webp'
 import CBSMon3 from '~/assets/images/portfolio/cbs-monitoring/cbs-monitoring3.webp'
 
+import Dubai1 from '~/assets/images/portfolio/bisnis-di-dubai/dubai1.webp'
+import Dubai2 from '~/assets/images/portfolio/bisnis-di-dubai/dubai2.webp'
+import Dubai3 from '~/assets/images/portfolio/bisnis-di-dubai/dubai3.webp'
+
+import MonitoringKopnus1 from '~/assets/images/portfolio/monitoring-kopnuspos/monitoring-kopnuspos1.webp'
+import MonitoringKopnus2 from '~/assets/images/portfolio/monitoring-kopnuspos/monitoring-kopnuspos2.webp'
+import MonitoringKopnus3 from '~/assets/images/portfolio/monitoring-kopnuspos/monitoring-kopnuspos3.webp'
+
+import SKM1 from '~/assets/images/portfolio/skm/skm1.webp'
+import SKM2 from '~/assets/images/portfolio/skm/skm2.webp'
+import SKM3 from '~/assets/images/portfolio/skm/skm3.webp'
+
 useHead({
   title: 'Portfolio - Galih Anggoro Jati'
 })
@@ -94,7 +106,7 @@ const portfolios = ref([
   },
   {
     id: 2,
-    title: 'Merchant',
+    title: 'Merchant Kopnuspos',
     imgs: [
       { id: 'img-Merchant-1', src: Merchant1 },
       { id: 'img-Merchant-2', src: Merchant2 },
@@ -136,6 +148,33 @@ const portfolios = ref([
       { id: 'img-CBSMon-2', src: CBSMon2 },
       { id: 'img-CBSMon-3', src: CBSMon3 },
     ]
+  },
+  {
+    id: 7,
+    title: 'Bisnis Di Dubai',
+    imgs: [
+      { id: 'img-Dubai-1', src: Dubai1 },
+      { id: 'img-Dubai-2', src: Dubai2 },
+      { id: 'img-Dubai-3', src: Dubai3 },
+    ]
+  },
+  {
+    id: 8,
+    title: 'Monitoring Kopnuspos',
+    imgs: [
+      { id: 'img-MonitoringKopnus-1', src: MonitoringKopnus1 },
+      { id: 'img-MonitoringKopnus-2', src: MonitoringKopnus2 },
+      { id: 'img-MonitoringKopnus-3', src: MonitoringKopnus3 },
+    ]
+  },
+  {
+    id: 9,
+    title: 'SKM Cianjur',
+    imgs: [
+      { id: 'img-SKM-1', src: SKM1 },
+      { id: 'img-SKM-2', src: SKM2 },
+      { id: 'img-SKM-3', src: SKM3 },
+    ]
   }
 ]);
 
@@ -144,11 +183,14 @@ const search = ref(999) // default All
 const filterButton = ref([
   { id: 999, title: 'All' },
   { id: 1, title: 'Logee' },
-  { id: 2, title: 'Merchant' },
+  { id: 2, title: 'Merchant Kopnuspos' },
   { id: 3, title: 'Dextop' },
   { id: 4, title: 'Youb.id' },
   { id: 5, title: 'CBS Web' },
   { id: 6, title: 'CBS Monitoring' },
+  { id: 7, title: 'Bisnis Di Dubai' },
+  { id: 8, title: 'Monitoring Kopnuspos' },
+  { id: 9, title: 'SKM Cianjur' },
 ])
 
 const portfolioFilter = computed(() => {
