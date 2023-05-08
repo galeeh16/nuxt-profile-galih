@@ -28,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="fixed bottom-5 left-5 text-gray-400 text-[14px] bg-neutral-100">
+      <div class="fixed bottom-5 left-5 text-gray-400 text-[14px] ">
         &copy; Copyright Galih Anggoro Jati
       </div>
     </header>
