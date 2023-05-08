@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 md:p-10 lg:p-16">
-    <HeaderTitle title="WORK EXPERIENCES" />
+    <HeaderTitle title="Work Experiences" />
 
     <div class="mt-10"></div>
 

@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-[24px] lg:text-[34px] text-orange-500 tracking-[4px] relative title font-medium">{{ title }}</h1>
+  <h1
+    class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-400 to-pink-500 text-[24px] lg:text-[38px]">
+    {{ title }}</h1>
 </template>
 
 <script setup>
