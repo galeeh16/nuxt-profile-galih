@@ -12,7 +12,7 @@
 
     <div class="mt-10 flex flex-wrap gap-10 lg:gap-16">
       <div>
-        <img src="/profile-galih.webp" class="max-w-[300px] max-h-[300px] rounded-lg w-full" />
+        <img src="/profile-galih.webp" alt="Galih AJ" class="max-w-[300px] max-h-[300px] rounded-lg w-full" />
       </div>
       <div class="self-baseline">
         <table class="">
