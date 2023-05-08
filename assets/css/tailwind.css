@@ -7,7 +7,6 @@
 html,
 body {
     font-family: 'Poppins', sans-serif;
-    @apply text-sm md:text-base;
     color: #3d4042;
 }
 
