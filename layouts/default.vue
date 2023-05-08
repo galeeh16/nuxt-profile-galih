@@ -1,10 +1,10 @@
 <template>
   <Transition name="sidebar">
     <header id="header"
-      class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-[#040b14] duration-300 ease-in-out text-white p-4 lg:p-6 z-[5] overflow-hidden"
+      class="h-[100-vh] fixed w-[300px] top-0 bottom-0 bg-zinc-950 duration-300 ease-in-out text-white p-4 lg:p-6 z-[5] overflow-hidden"
       v-show="isShowingSidebar">
       <div class="flex justify-center mt-4 lg:mt-6 relative">
-        <img src="/profile-galih.webp" class="w-[120px] h-[120px] rounded-full" />
+        <img src="/profile-galih.webp" loading="eager" class="w-[120px] h-[120px] rounded-full" />
 
         <div class="bg-gradient w-44 h-52 absolute z-[-1] top-0 left-0 inset-0">
 
@@ -18,7 +18,7 @@
       <div class="mt-14">
         <ul>
           <li class="mb-8 font-normal" v-for="link in links" :key="link.id">
-            <nuxt-link :to="link.to" class="inline-flex items-center gap-2 text-gray-400 group">
+            <nuxt-link :to="link.to" class="inline-flex items-center gap-2 text-gray-400 group" @click="dismissSidebar">
               <span class="group-hover:fill-orange-500" :style="link.to == route.path ? linkOverrideStyle : linkBaseStyle"
                 v-html="link.svg"></span>
               <span class="group-hover:text-orange-500"
@@ -28,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="fixed bottom-5 left-5 text-gray-400 text-[14px]">
+      <div class="fixed bottom-5 left-5 text-gray-400 text-[14px] bg-neutral-100">
         &copy; Copyright Galih Anggoro Jati
       </div>
     </header>
@@ -39,7 +39,7 @@
     <slot />
   </div>
 
-  <button v-show="isShowingButtonSidebar" @click="isShowingSidebar = !isShowingSidebar"
+  <button v-show="isShowingButtonSidebar" @click="isShowingSidebar = !isShowingSidebar" id="btn-hamburger-menu"
     class="block rounded-full shadow-lg bg-orange-100 p-2 text-orange-500 transition hover:text-orange-600/75 fixed right-6 top-6">
     <span class="sr-only">Toggle menu</span>
 
@@ -66,6 +66,14 @@ const isShowingButtonSidebar = ref(false)
 
 const width = ref()
 const height = ref()
+
+const dismissSidebar = () => {
+  const currentWidth = window.innerWidth
+  if (currentWidth < 1024) {
+    let b = document.getElementById('btn-hamburger-menu')
+    b.click()
+  }
+}
 
 onMounted(() => {
   width.value = document.documentElement.clientWidth;
@@ -163,6 +171,6 @@ const linkOverrideStyle = ref({
 
 .bg-gradient {
   background-image: linear-gradient(45deg, #82fdff, #fb78ff);
-  filter: blur(160px);
+  filter: blur(150px);
 }
 </style>

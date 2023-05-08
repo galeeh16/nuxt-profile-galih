@@ -1,4 +1,9 @@
 {
-    "welcome": "Selamat Datang di Halaman Profile ku",
-    "mulai": "Memulai"
-}
+    "welcome": "Hi guys, welcome to my profile page",
+    "start": "Getting Started",
+    "next": "Next",
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "work_experiences": "Work Experiences"
+  }

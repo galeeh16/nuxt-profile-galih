@@ -1,6 +1,3 @@
-import en from './locales/en.json'
-import id from './locales/id.json'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // ssr: false,
@@ -46,15 +43,8 @@ export default defineNuxtConfig({
 
   },
   i18n: {
-    // add `vueI18n` option to `@nuxtjs/i18n` module options
-    vueI18n: {
-      legacy: false,
-      locale: 'en',
-      messages: {
-        en: en,
-        id: id
-      }
-    }
+    defaultLocale: 'en',
+    vueI18n: './i18n.config.js' // if you are using custom path, default 
   },
   // Recommended 
   runtimeConfig: {
@@ -62,5 +52,4 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://galih-anggoro-jati.vercel.app',
     }
   },
-
 })

@@ -19,7 +19,7 @@ h1.title::after {
   width: 50px;
   height: 3px;
   background: #ed791b;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
 }
 </style>
