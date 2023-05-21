@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -7,15 +7,9 @@
 
 html,
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #323236;
+    font-family: 'Poppins', sans-serif;
+    color: #3b3b40;
 }
-
-::selection {
-    background-color: rgb(249 115 22);
-    color: white;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

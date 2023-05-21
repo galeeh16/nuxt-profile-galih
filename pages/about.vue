@@ -80,66 +80,66 @@
     </div>
 
     <div class="mt-10 lg:mt-16 mb-4 lg:mb-12">
-      <h3 class="text-lg font-semibold">Tools and Technologies</h3>
+      <h3 class="text-lg font-semibold text-slate-800">Tools and Technologies</h3>
 
       <div class="mt-4 flex flex-wrap mb-24 lg:mb-0 items-center gap-4 lg:gap-6">
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <PHP />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PHP</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <JS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">JavaScript</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <Laravel />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Laravel
             Framework</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <Lumen />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Lumen
             Framework</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <Vue />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">VueJS</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <React />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">ReactJS</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <NuxtJS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">NuxtJS</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <HTML />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">HTML</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <CSS />
           <span
             class="group-hover:opacity-100 hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">CSS</span>
         </div>
 
-        <div class="group flex relative cursor-pointer">
+        <div class="group flex relative cursor-pointer mb-4">
           <PostgreSQL />
           <span
             class="group-hover:opacity-100  hidden group-hover:inline whitespace-nowrap transition-opacity bg-gray-800 px-3 py-1 text-sm text-gray-100 rounded-md absolute left-1/2 z-10 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">PostgreSQL</span>

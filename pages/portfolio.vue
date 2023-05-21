@@ -4,7 +4,7 @@
 
     <MotifGradient />
 
-    <p class="mt-10 font-normal leading-[30px]">This is the projects that i made so far</p>
+    <p class="mt-10 font-normal leading-[30px] text-slate-800">This is the projects that i made so far</p>
 
     <!-- project section -->
     <ClientOnly>

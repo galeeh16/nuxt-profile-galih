@@ -7,7 +7,8 @@
         </h1>
         <h2 class="font-semibold text-[20px] lg:text-[32px] text-gray-900 mt-2 mb-8">
           <div class="flex items-center gap-2">I am
-            <VueWriter class="underline text-orange-600"
+            <VueWriter
+              class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-orange to-rose-500"
               :array="['Programmer', 'Photography Enthusiast', 'Freelance Programmer']" caret="underscore" :typeSpeed="90"
               :eraseSpeed="50" />
           </div>
