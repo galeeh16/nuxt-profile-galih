@@ -2,8 +2,6 @@
   <div class="p-4 md:p-10 lg:p-16 min-h-screen relative overflow-hidden">
     <HeaderTitle title="About Me" />
 
-    <MotifGradient />
-
     <p class="mt-10 font-normal leading-[30px]">Hi! my name is <b class="font-semibold">Galih Anggoro Jati</b>. I am {{
       myAge }} years old and I
       am Informatics Engineer who loves technology especially programming. I am friendly, responsive, interest for learn
@@ -70,9 +68,9 @@
           </tbody>
         </table>
         <div class="mt-1">
-          <p class="mb-4">Follow me on <a class="text-orange-500 font-semibold hover:underline"
+          <p class="mb-4">Follow me on <a class="text-primary font-semibold hover:underline"
               href="https://www.instagram.com/galihanggorojati/" target="_blank">Instagram</a></p>
-          <p class="mb-4">Follow me on <a class="text-orange-500 font-semibold hover:underline"
+          <p class="mb-4">Follow me on <a class="text-primary font-semibold hover:underline"
               href="https://www.linkedin.com/in/galih-anggoro-jati/" target="_blank">Linkedin</a></p>
         </div>
 

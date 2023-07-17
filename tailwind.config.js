@@ -21,6 +21,12 @@ module.exports = {
             transform: "translate(0px, 0px) scale(1)"
           }
         }
+      },
+      colors: {
+        primary: '#ff923e',
+        primaryHover: '#ed8739',
+        lightPrimary: '#f1ebe2',
+        dark: '#091434'
       }
     },
   },

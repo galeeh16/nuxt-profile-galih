@@ -7,20 +7,20 @@
     <ClientOnly>
       <div class="w-full">
         <div class="mb-4">
-          <h3 class="text-[26px] text-slate-800 font-semibold mt-4 lg:mt-12">Professional Experiences</h3>
+          <h3 class="text-[26px] text-dark font-semibold mt-4 lg:mt-12">Professional Experiences</h3>
 
           <div class="flex gap-4 items-center mt-6 mb-4 overflow-x-auto pb-3">
             <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
-              class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border border-gray-300 bg-white text-[14px] hover:text-orange-500 hover:border-orange-500 hover:bg-orange-50/40 ease-in-out transition duration-100 whitespace-nowrap"
-              :class="search === filter.id ? 'text-orange-500 border-orange-500 ' : 'border-gray-300'">
+              class="cursor-pointer focus:outline-none active:outline-none px-3 py-1.5 rounded-lg border bg-white border-gray-200 text-[14px] hover:text-primary hover:border-primary ease-in-out transition duration-100 whitespace-nowrap"
+              :class="search === filter.id ? 'text-primary border-primary ' : 'border-gray-300'">
               {{ filter.title }}
             </button>
           </div>
 
           <TransitionGroup name="fade" tag="div">
             <div v-for="work in workFilter" :key="work.id"
-              class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-orange-500 relative before:bg-orange-500 before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
-              <h4 class="leading-[28px] text-lg text-orange-500 font-semibold mb-2">{{ work.office }}</h4>
+              class="pt-0 pr-0 pb-5 pl-5 border-l-2 border-l-primary relative before:bg-primary before:top-[5px] before:content=[''] before:absolute before:w-4 before:h-4 before:-left-[9px] before:rounded-full">
+              <h4 class="leading-[28px] text-lg text-primary font-semibold mb-2">{{ work.office }}</h4>
               <p class="italic leading-[28px]">
               <div v-html="work.desc"></div>
               </p>
@@ -48,7 +48,7 @@ const workExperiences = ref([
   {
     id: 1,
     office: 'KOPNUSPOS',
-    desc: `Programmer at <a target="_blank" href="https://www.kopnuspos.com/" class="italic font-semibold text-orange-500 hover:underline">KOPNUSPOS</a> (Nov 2019 - Present)`,
+    desc: `Programmer at <a target="_blank" href="https://www.kopnuspos.com/" class="italic font-semibold text-primary hover:underline">KOPNUSPOS</a> (Nov 2019 - Present)`,
     list: [
       { id: '1-1', text: 'Research, design and develop software system who client needs.' },
       { id: '1-2', text: 'Develop existing program or creating program by analyzing and understanding source code for modification.' },
@@ -81,12 +81,12 @@ const workExperiences = ref([
   {
     id: 2,
     office: 'INARTS',
-    desc: `Junior Programmer at <a target="_blank" href="http://www.inarts.co.id/" class="italic font-semibold text-orange-500 hover:underline">PT. Inti Artistika Solusitama</a> (Oct 2018 - Oct 2019)`,
+    desc: `Junior Programmer at <a target="_blank" href="http://www.inarts.co.id/" class="italic font-semibold text-primary hover:underline">PT. Inti Artistika Solusitama</a> (Oct 2018 - Oct 2019)`,
     list: [
       { id: '2-1', text: 'Reseacrh, design and develop software system who client needs.' },
       { id: '2-2', text: 'Develop existing program or creating program by analyzing and understanding source code for modification.' },
       { id: '2-3', text: 'Maintenance system.' },
-      { id: '2-4', text: `Creating <a target="_blank" href="https://www.youb.id/" class="text-orange-500 font-semibold hover:underline">youb.id</a> with PHP (Webid)` },
+      { id: '2-4', text: `Creating <a target="_blank" href="https://www.youb.id/" class="text-primary font-semibold hover:underline">youb.id</a> with PHP (Webid)` },
       { id: '2-5', text: 'Creating API with Django.' },
       { id: '2-6', text: 'Creating API with Laravel.' },
       { id: '2-7', text: 'Creating Admin Dashboard with React.' },
@@ -97,11 +97,11 @@ const workExperiences = ref([
     office: 'Freelance Web Developer',
     desc: 'Freelance Web Developer (2017 - Present)',
     list: [
-      { id: '3-1', text: `Creating <a target="_blank" href="https://logee.id/" class="text-orange-500 font-semibold hover:underline">Logee</a> (a subsidiary of Telkom) with Laravel` },
+      { id: '3-1', text: `Creating <a target="_blank" href="https://logee.id/" class="text-primary font-semibold hover:underline">Logee</a> (a subsidiary of Telkom) with Laravel` },
       { id: '3-2', text: 'Creating Dextop Dashboard (Backoffice for Telkom DEX Team) with Laravel.' },
       { id: '3-3', text: 'Creating KPU Web Dashboard Cianjur with Laravel.' },
-      { id: '3-4', text: 'Creating <a target="_blank" href="https://disnakertrans.cianjurkab.go.id/skm/" class="text-orange-500 font-semibold hover:underline">SKM</a> (Survey App for Disnakertrans) Cianjur.' },
-      { id: '3-5', text: 'Creating <a target="_blank" href="https://bisnisdidubai.com" class="text-orange-500 font-semibold hover:underline">BisnisDiDubai</a> with NuxtJS.' },
+      { id: '3-4', text: 'Creating <a target="_blank" href="https://disnakertrans.cianjurkab.go.id/skm/" class="text-primary font-semibold hover:underline">SKM</a> (Survey App for Disnakertrans) Cianjur.' },
+      { id: '3-5', text: 'Creating <a target="_blank" href="https://bisnisdidubai.com" class="text-primary font-semibold hover:underline">BisnisDiDubai</a> with NuxtJS.' },
     ]
   },
   {

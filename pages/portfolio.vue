@@ -2,8 +2,6 @@
   <div class="p-4 md:p-10 lg:p-16">
     <HeaderTitle title="Portfolio" />
 
-    <MotifGradient />
-
     <p class="mt-10 font-normal leading-[30px] text-slate-800">This is the projects that i made so far</p>
 
     <!-- project section -->
@@ -12,15 +10,15 @@
         <div class="flex gap-4 items-center mt-8 overflow-x-auto pb-3">
 
           <button v-for="filter in filterButton" :key="filter.id" @click="filtered(filter.id)"
-            class="cursor-pointer focus:outline-none active:outline-none px-3 py-1 rounded-xl border bg-white border-gray-300 text-[14px] hover:text-orange-500 hover:border-orange-500 ease-in-out transition duration-100 whitespace-nowrap"
-            :class="search === filter.id ? 'text-orange-500 border-orange-500 ' : 'border-gray-300'">
+            class="cursor-pointer focus:outline-none active:outline-none px-3 py-1.5 rounded-lg border bg-white border-gray-200 text-[14px] hover:text-primary hover:border-primary ease-in-out transition duration-100 whitespace-nowrap"
+            :class="search === filter.id ? 'text-primary border-primary ' : 'border-gray-300'">
             {{ filter.title }}
           </button>
         </div>
 
         <TransitionGroup name="fade" tag="div">
           <template v-for="(portfolio, portIdx) in portfolioFilter" :key="portfolio.id">
-            <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4">{{ portfolio.title }}</h3>
+            <h3 class="font-medium text-[19px] mt-8 lg:mt-8 mb-4 text-dark">{{ portfolio.title }}</h3>
 
             <div class="port-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 relative">
               <div v-for="(img, indexImg) in portfolio.imgs" :key="img.id"
